@@ -1,0 +1,527 @@
+*{
+  margin:0;
+  padding:0;
+}
+/*les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+/*Header*/
+
+header{
+  background-color: #E0E0E0;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  position: static;
+}
+
+#logo{
+  background-image: url(logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin-top: 1.8vh;
+  height: 11vh;
+  width: 10vw;
+  margin-left: 2vw;
+}
+
+#fr{
+  background-image: url(fr.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 2.5vh;
+  width: 2vw;
+  margin-left: 1vw;
+  margin-top: 4vh;
+}
+
+#en{
+  background-image: url(en.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 2.5vh;
+  width: 2vw;
+  margin-left: 1vw;
+  margin-top: 1vh;
+}
+
+#menu{
+  display: flex;
+  flex-direction: row;
+}
+
+#accueil,#logistique, #transport,#contact{
+  height: 7vh;
+  width: 8vw;
+  color:white;
+  text-align: center;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 1.2em;
+  border: 1px solid white;
+  padding-top: 2vh;
+  margin-top: 4vh;
+  background-color: #fe970a;
+}
+
+#accueil{
+  margin-left: 14vw;
+}
+#expedition{
+  height: 7vh;
+  width: 17vw;
+  color:white;
+  text-align: center;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 1.2em;
+  border: 1px solid white;
+  padding-top: 2vh;
+  margin-top: 4vh;
+  background-color: #fe970a;
+}
+#accueil:hover{
+  color:#fe970a;
+  background-color: white;
+}
+#logistique:hover{
+  color:#fe970a;
+  background-color: white;
+}
+#transport:hover{
+  color:#fe970a;
+  background-color: white;
+}
+#expedition:hover{
+  color:#fe970a;
+  background-color: white;
+}
+#contact:hover{
+  color:#fe970a;
+  background-color: white;
+}
+
+
+#presentation{
+    display: flex;
+    flex-direction: row;
+    background-position: 100% 100%;
+    height: 84.9vh;
+    background-color: white;
+}
+
+#imgpresentation{
+  background-image: url(locaux.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#textepresentation{
+  width: 45vw;
+  height: 63vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 12vh;
+  border: 0.2vw solid #fe970a;
+  font-size: 1.1em;
+}
+
+#paragraphe1{
+  padding-top:8.5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+
+}
+
+#paragraphe2{
+  padding-top:5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+#paragraphe3{
+  padding-top:5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+/*Logistique et transport*/
+
+#bloclogistique{
+  background-color: white;
+  height: 100.3vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+    /*Bloc texte logistique et Bloc texte transport*/
+
+#txtlogistique{
+  background-color: white;
+  width: 38vw;
+  height: 74vh;
+  margin-top: 16vh;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+}
+
+#titrelogistique{
+  background-color:#fe970a;
+  height: 10vh;
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 2.5vh;
+  color: white;
+  border: 0.2vw solid #fe970a;
+}
+
+#clientlogistique{
+  background-color: white;
+  height: 20vh;
+  padding: 2.5vw 2.5vw 2.5vw 2.5vw;
+  margin-top: 2vh;
+  border: 0.2vw solid #fe970a;
+}
+#prestalogistique{
+  background-color: white;
+  height: 34vh;
+  padding: 2.7vw 2.5vw 2.5vw 2.5vw;
+  margin-top: 2vh;
+  border: 0.2vw solid #fe970a;
+}
+
+span{
+  font-size: 1.08em;
+  font-weight: bolder;
+}
+
+    /*Bloc images logistique et Bloc images transport */
+
+#imglogistique,#imgtransport,#imgexpedition{
+  display: flex;
+  flex-direction: column;
+  width: 51vw;
+  height: 90vh;
+  margin-top: 5vh;
+  margin-left: 2vw;
+}
+
+#ligne_1,#ligne_2,#ligne_3,#ligne_4{
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+}
+
+#img1, #img2, #img3,#img4,#img5, #img6,#img7,#img8{
+  height: 44vh;
+  width: 25vw;
+  margin-left: 1vw;
+}
+#img1,#img2,#img5,#img6{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+#img3,#img4,#img7, #img8{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin-top: 1vh;
+}
+#img1{
+  background-image: url(entrepot1.jpg);
+}
+#img2{
+  background-image: url(entrepot2.jpg);
+}
+#img3{
+background-image: url(entrepot3.jpg);
+}
+#img4{
+  background-color: navy;
+  /*background-image: url(entrepot4.jpg);*/
+}
+
+
+/*Transport*/
+
+#img5{
+  background-image: url(partner.jpg);
+}
+#img6{
+  background-image: url(camion.jpg);
+}
+#img7{
+  /*background-image: url(.jpg);*/
+  background-color: navy;
+}
+#img8{
+  /*background-image: url(.jpg);*/
+  background-color: navy;
+}
+
+
+#bloctransport{
+  background-color: white;
+  height: 100.3vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#txttransport{
+  background-color: white;
+  width: 38vw;
+  height: 90vh;
+  margin-top: 9vh;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+}
+
+#titretransport{
+  background-color:#fe970a;
+  height: 10vh;
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 2.5vh;
+  color: white;
+  border: 0.2vw solid #fe970a;
+}
+#letransport{
+  background-color:white;
+  height: 20vh;
+  padding: 3vw 2.5vw 2.5vw 2.5vw;
+  margin-top: 2vh;
+  border: 0.2vw solid #fe970a;
+}
+#missiontransport{
+  background-color: white;
+  height: 30vh;
+  padding: 2vw 2.5vw 5vw 2.5vw;
+  margin-top: 2vh;
+  border: 0.2vw solid #fe970a;
+}
+#groupage{
+  background-color: white;
+  height: 13vh;
+  padding: 1.5vw 2.5vw 6vw 2.5vw;
+  margin-top: 2vh;
+  border: 0.2vw solid #fe970a;
+}
+
+/*Expéditions particulières*/
+
+
+#blocexpedition{
+  background-color: white;
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#txtexpedition{
+  background-color:white;
+  width: 38vw;
+  height: 95vh;
+  margin-top: 6vh;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+}
+#titreexpedition{
+  background-color:#fe970a;
+  height: 12vh;
+  width: 35vw;
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 1.5vh;
+  margin-left: 6vw;
+  color: white;
+  border: 0.2vw solid #fe970a;
+}
+#expedi{
+  background-color:white;
+  height: 31vh;
+  width: 35vw;
+  padding: 1.5vw 2.5vw 2.5vw 2.5vw;
+  margin-top: 2vh;
+  margin-left: 6vw;
+  border: 0.2vw solid #fe970a;
+}
+#imgexpedition{
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  height: 90vh;
+  padding-top: 2vh;
+  margin-top: 5vh;
+  margin-left: 8vw;
+  /*background-color: green;*/
+}
+#img9{
+  background-image: url(installation1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 35vw;
+  height: 40vh;
+  margin-left: 5vw;
+}
+#img10{
+  /*background-image: url(installation.jpg);*/
+  background-color: navy;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 35vw;
+  height: 40vh;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+#img11{
+  background-image: url(installation.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 35vw;
+  height: 40vh;
+  margin-top: 3vh;
+  margin-left: 6vw;
+}
+
+/*Contact*/
+
+#bloccontact{
+  height: 100.3vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#contacts{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 88vh;
+  margin-left: 10vw;
+  margin-top: 6vh;
+}
+#adresse{
+  width: 36vw;
+  height: 35vh;
+  margin-left: 2vw;
+  margin-top: 4vh;
+  border: 0.2vw solid #fe970a;
+}
+#ad{
+  padding-top: 6vh;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#courtaboeuf{
+  border: 0.2vw solid #fe970a;
+  width: 36vw;
+  height: 40vh;
+  margin-left: 2vw;
+  margin-top: 3vh;
+  padding: 6vh 2vw 2vh 2vw;
+  font-size: 1.1em;
+}
+#linkmap{
+  display: flex;
+  flex-direction: column;
+}
+#map{
+  border: 0.2vw solid #fe970a;
+  background-image: url(map.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 30vw;
+  height: 70vh;
+  margin-left: 8vw;
+  margin-top: 6vh;
+}
+#liens{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 15vh;
+  margin-left: 8vw;
+  margin-top: 3vh;
+  border: 0.2vw solid #fe970a;
+}
+h2{
+  text-align: center;
+  padding-top: 1.5vh;
+  font-size: 1.2em;
+
+}
+#imageliens{
+  display: flex;
+  flex-direction: row;
+}
+
+#imageliens img{
+  width: 7vw;
+  height: 7vh;
+  margin-top: 2vh;
+  padding-bottom: 1vh;
+  padding-left: 1.3vw;
+}
+
+
+/*Footer*/
+
+#retour{
+  height: 6vh;
+  background-color: #E0E0E0;
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 2vh;
+  color: #fe970a;
+}
+#retour:hover{
+  background-color:#fe970a;
+  color: #E0E0E0;
+}
+footer{
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#infos{
+  display: flex;
+  justify-content: center;
+  height: 3vh;
+  width: 40vw;
+  color:#212121;
+  font-size: 0.8em;
+  margin-left: 29vw;
+  padding-top: 4vh;
+}
